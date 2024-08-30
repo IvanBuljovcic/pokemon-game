@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Canvas game</title>
+</head>
+<style>
+  body {
+    margin: 0;
+    background-color: #000;
+  }
+
+  .wrapper {
+    display: inline-block;
+    position: relative;
+  }
+
+  #overlap {
+    background-color: #000;
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .healthbar {
+    height: 140px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    border-top: 2px solid #000;
+  }
+</style>
+
+<body>
+  <div class="wrapper">
+    <div id="overlap"></div>
+    <canvas></canvas>
+
+    <!-- <div class="healthbar"></div> -->
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="./data/collisions.js"></script>
+  <script src="./data/battleZones.js"></script>
+  <script src="./classes.js"></script>
+  <script src="./helpers/arrayMapper.js"></script>
+  <script src="./canvas.js"></script>
+  <script src="./main.js"></script>
+  <script src="./battle.js"></script>
+  <script src="./index.js"></script>
+</body>
+
+</html>
